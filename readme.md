@@ -31,7 +31,7 @@ Setup Instructions
 
 1. Clone repository
 
-git clone [<repo_link>](https://github.com/rainmaker69/adnabu-qa-assignment)
+git clone [<this_repo>](https://github.com/rainmaker69/adnabu-qa-assignment)
 
 2. Install dependencies
 
