@@ -1,85 +1,83 @@
-Test Case 1 — Product Search (Valid Product)
+# Test Case 1 – Product Search (Valid Product)
 
-Objective: Verify user can search for an existing product.
+**Objective:**  
+Verify user can search for an existing product.
 
-Steps
+**Steps:**
+1. Open store homepage  
+2. Enter “t-shirt” in search bar  
+3. Click **Search**
 
-Open store homepage
+**Expected Result:**  
+Relevant products containing *t-shirt* appear in results.
 
-Enter "t-shirt" in search bar
+---
 
-Click search
+# Test Case 2 – Product Search (Non‑existent Product)
 
-Expected Result
+**Objective:**  
+Verify system behavior for invalid product.
 
-Relevant products containing t-shirt appear in results.
+**Steps:**
+1. Enter `asdkjhaskjdh` in search  
+2. Click **Search**
 
-Test Case 2 — Product Search (Non-existent Product)
+**Expected Result:**  
+Message shown: _No products found_
 
-Objective: Verify system behavior for invalid product.
+---
 
-Steps
+# Test Case 3 – Product Search (Partial Match)
 
-Enter "asdkjhaskjdh" in search
+**Objective:**  
+Verify partial keyword search.
 
-Click search
+**Steps:**
+1. Enter “shirt”  
+2. Click **Search**
 
-Expected Result
+**Expected Result:**  
+Products containing keyword *shirt* appear.
 
-Message shown: No products found
+---
 
-Test Case 3 — Product Search (Partial Match)
+# Test Case 4 – Add Product to Cart (Valid)
 
-Objective: Verify partial keyword search.
+**Objective:**  
+Verify user can add product to cart.
 
-Steps
+**Steps:**
+1. Open product page  
+2. Click **Add to Cart**
 
-Enter "shirt"
+**Expected Result:**
+- Product appears in cart  
+- Cart count increases by 1
 
-Search
+---
 
-Expected Result
+# Test Case 5 – Add Multiple Quantity
 
-Products containing keyword shirt appear.
+**Objective:**  
+Verify cart updates quantity.
 
-Test Case 4 — Add Product to Cart (Valid)
+**Steps:**
+1. Add the same product twice
 
-Objective: Verify user can add product to cart.
+**Expected Result:**  
+Cart shows quantity **2**
 
-Steps
+---
 
-Open product page
+# Test Case 6 – Edge Case (Add Out‑of‑Stock Product)
 
-Click Add to Cart
+**Objective:**  
+Verify system prevents adding unavailable items.
 
-Expected Result
+**Steps:**
+1. Open out‑of‑stock product  
+2. Attempt to add to cart
 
-Product appears in cart
-
-Cart count increases by 1
-
-Test Case 5 — Add Multiple Quantity
-
-Objective: Verify cart updates quantity.
-
-Steps
-
-Add same product twice
-
-Expected Result
-
-Cart shows quantity 2
-
-Test Case 6 — Edge Case (Add Out-of-Stock Product)
-
-Objective: Verify system prevents adding unavailable items.
-
-Steps
-
-Open out-of-stock product
-
-Attempt add to cart
-
-Expected Result
-
-Add to Cart disabled OR error message displayed.
+**Expected Result:**  
+* Add to Cart disabled **or**  
+* Error message displayed
