@@ -7,7 +7,7 @@ class HomePage:
 
     SEARCH_ICON = (By.CSS_SELECTOR, "summary.header__icon--search")
     SEARCH_INPUT = (By.NAME, "q")
-    FIRST_PRODUCT = (By.CSS_SELECTOR, "a.full-unstyled-link")
+    FIRST_PRODUCT = (By.CSS_SELECTOR, "a[href*='/products/']")
 
     def __init__(self, driver):
         self.driver = driver
