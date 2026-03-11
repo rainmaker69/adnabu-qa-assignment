@@ -31,9 +31,13 @@ Setup Instructions
 
 1. Clone repository
 
-git clone [<this_repo>](https://github.com/rainmaker69/adnabu-qa-assignment)
+git clone <repo_link>
 
 2. Install dependencies
+
+cd /Users/bhargav/adnabu-qa-assignment
+
+source venv/bin/activate
 
 pip install -r requirements.txt
 
